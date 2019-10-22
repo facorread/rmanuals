@@ -13,9 +13,9 @@ fi
 
 if [[ -f *.pdf ]]
 then
-	pkgList="$(echo data.table ggplot2 openxlsx readxl rstan statnet dagitty *.pdf "$@" | tr ' ' '\n' | sed 's:.pdf$::' | sort | uniq -u)"
+	pkgList="$(echo data.table ggplot2 openxlsx readxl rstan statnet dagitty *.pdf "$@" | tr ' ' '\n' | sed 's:.pdf$::' | sort | uniq)"
 else
-	pkgList="$(echo data.table ggplot2 openxlsx readxl rstan statnet dagitty "$@" | tr ' ' '\n' | sed 's:.pdf$::' | sort | uniq -u)"
+	pkgList="$(echo data.table ggplot2 openxlsx readxl rstan statnet dagitty "$@" | tr ' ' '\n' | sed 's:.pdf$::' | sort | uniq)"
 fi
 
 echo Downloading "$pkgList" | tr '\n' ' '
