@@ -28,4 +28,5 @@ do
 	curl --output "$filename" --progress-bar "https://cran.r-project.org/web/packages/${pkgname}/$filename"
 done
 
+echo 'R Markdown: The Definitive Guide'
 curl --output "RMarkdownDefinitiveGuide.pdf" --progress-bar "https://bookdown.org/yihui/rmarkdown/rmarkdown.pdf"
